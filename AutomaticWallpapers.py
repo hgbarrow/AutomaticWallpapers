@@ -1,7 +1,6 @@
 # Automatic Wallpapers by Henry Barrow - 9/20/2015
 # Downloads the first N pages of InterfaceLIFT wallpapers to a local folder
-# Choose this folder as a slideshow in desktop settings and use Windows Task Scheduler
-# to have the program run periodically
+# Choose this folder as a slideshow in the desktop settings for best results
 
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
