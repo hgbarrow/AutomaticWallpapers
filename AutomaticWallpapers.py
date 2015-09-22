@@ -9,12 +9,12 @@ import os
 
 BASE_URL = "https://interfacelift.com"
 url = 'https://interfacelift.com/wallpaper/downloads/date/wide_16:9/1920x1080/'
-pages = 1 # Number of pages to scrape
-max_files = 30 # Maximum number of files to store on drive
+pages = 4 # Number of pages to scrape
+max_files = 40 # Maximum number of files to store on drive
 
 def make_soup(url):
 	html = urlopen(url).read()
-	return BeautifulSoup(html, 'lxml')
+	return BeautifulSoup(html, 'html.parser')
 	
 def get_img_links(url):
 	soup = make_soup(url)
